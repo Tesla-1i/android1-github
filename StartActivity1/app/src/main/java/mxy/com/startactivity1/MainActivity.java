@@ -13,26 +13,31 @@ public class MainActivity extends AppCompatActivity {
 
     private final static int REQUEST_CODE = 1;
 
-    @Override
-    protected void onActivityResult(int requestCode,int resultCode, Intent data){
-        if(requestCode == REQUEST_CODE){
-            if(resultCode == Activity1.RESULT_CODE){
-                Bundle bundle= data.getExtras();
-            String str = bundle.getString("back");
-                Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();}
-        }
-    }
+
 
     private View.OnClickListener listener=new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent=new Intent();
-            intent.setClass(MainActivity.this,Activity1.class);
+            intent.setClass(MainActivity.this,Main2Activity.class);
             intent.putExtra("str","第一个activity传过来的值");
             //startActivity(intent);
             startActivityForResult(intent,REQUEST_CODE);
         }
     };
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == REQUEST_CODE){
+            if (requestCode == Main2Activity.RESULT_CODE){
+               Bundle bundle = data.getExtras();
+                String str = bundle.getString("back");
+
+                Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
+
+            }
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
