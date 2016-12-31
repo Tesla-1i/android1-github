@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static int REQUEST_CODE = 1;
+    private final static int REQUEST_CODE = 1;      //请求码
 
 
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(intent,REQUEST_CODE);
         }
     };
-
+    //onActivityResult方法处理请求
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == REQUEST_CODE){

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.nete.myapplication.MainActivity">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="第一个按钮,无返回值"
+        android:id="@+id/button1"
+     />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回的值将显示在这里"
+        android:textSize="28sp"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:layout_below="@+id/button1"
+
+         />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="第二个按钮，有返回值"
+        android:gravity="center"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView2"
+         />
+</RelativeLayout>
+<!--这里用的是自动生成的xml文件，布局随意，我建的是两个Button和一个TextView，TextView用来显示返回的值-->

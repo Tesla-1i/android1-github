@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StartActivity2</string>
+    <string name="btn1_1">第一个按钮，无返回值</string>
+    <string name="btn1_2">第二个按钮，有返回值</string>
+    <string name="txt1_1">返回的值显示在这里</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="btn2_1">返回值传给第一个activity关闭第二个activity</string>
+    <string name="txt2_1">第二个activity</string>
+</resources>

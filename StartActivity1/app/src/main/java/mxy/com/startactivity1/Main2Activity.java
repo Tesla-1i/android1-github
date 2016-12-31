@@ -12,7 +12,7 @@ public class Main2Activity extends AppCompatActivity {
 
     private TextView txt;/////////////////是textview不是view
     private Button  btn;
-    public static final int RESULT_CODE = 1;
+    public static final int RESULT_CODE = 1;        //结果码
 
     public View.OnClickListener listener = new View.OnClickListener() {
         @Override
@@ -20,7 +20,7 @@ public class Main2Activity extends AppCompatActivity {
             Intent intent= new Intent();
             intent.putExtra("back","第二个返回的值");
             setResult(RESULT_CODE,intent);
-            finish();
+            finish();       //销毁第二个activity
         }
     };
 
