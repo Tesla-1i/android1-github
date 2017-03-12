@@ -7,11 +7,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button_1"
-        android:text="@string/button_1"/>
+        android:text="Button 1"
+        android:textColor="#178888"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button_12"
-        android:text="按钮2"/>
+        android:text="Button 12"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_13"
+        android:text="Button 3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_14"
+        android:text="Button 14"/>
 
 </LinearLayout>

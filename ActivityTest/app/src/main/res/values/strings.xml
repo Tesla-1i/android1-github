@@ -4,4 +4,5 @@
     <string name="label">这是第一个活动</string>
     <string name="add">Add</string>
     <string name="remove">Remove</string>
+    <string name="button_2">按钮2</string>
 </resources>

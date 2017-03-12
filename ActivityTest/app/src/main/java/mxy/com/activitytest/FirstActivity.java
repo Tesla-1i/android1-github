@@ -34,11 +34,16 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(FirstActivity.this,"你点击了button1",Toast.LENGTH_SHORT).show();
                 Log.i("FirstActivity","你点击了button1");
+                //public void onClick(View v){}
+
+
             }
         });
+       // Button button2 = findViewById(R.id.button_12);
+        //button2.setOnClickListener();
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        //client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     @Override
